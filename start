@@ -30,7 +30,7 @@ done
 jupyter_args+=("--NotebookApp.default_url=/lab/")
 
 # Set default kernel
-jupyter_args+=("--MultiKernelManager.default_kernel_name='Slicer 5.0'"
+# jupyter_args+=("--MultiKernelManager.default_kernel_name='Slicer 5.0'"
 
 echo "Found jupyter notebook arguments: ${jupyter_args[@]}" 2>&1 | tee -a ~/.jupyter-server-log.txt
 
