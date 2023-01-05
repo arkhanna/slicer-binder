@@ -10,8 +10,6 @@ WORKDIR ${HOME}/nb
 ################################################################################
 # launch jupyter
 
-RUN pip3 install tqdm
-
 ENTRYPOINT ["/home/sliceruser/nb/start"]
 
 # NOTE: this is only the *default* command. In mybinder, ENTRYPOINT will be
