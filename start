@@ -39,7 +39,7 @@ export PYTHONUNBUFFERED=1
 # Use bash as shell in Jupyter terminal (much more convenient than the default sh)
 export SHELL=/bin/bash
 
-exec /home/sliceruser/Slicer/bin/PythonSlicer -m jupyter notebook "${jupyter_args[@]}" 2>&1 | tee -a ~/.jupyter-server-log.txt
+exec /home/sliceruser/Slicer/bin/PythonSlicer -m jupyter notebook --MultiKernelManager.default_kernel_name="Slicer 5.0" "${jupyter_args[@]}" 2>&1 | tee -a ~/.jupyter-server-log.txt
 
 # If launching fails for *any reason* then all the information mybinder provides is something like this:
 #
